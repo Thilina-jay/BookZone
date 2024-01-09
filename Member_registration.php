@@ -1,3 +1,36 @@
+
+<?php
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Validate and sanitize input data
+    $member_id = $_POST['member_id'];
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $birthday = $_POST['birthday'];
+    $email = $_POST['email'];
+
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format";
+        exit();
+    }
+
+    // Validate Member ID format using regex
+    if (!preg_match('/^M\d{3}$/', $member_id)) {
+        echo "Invalid Member ID format. Please use format M001";
+        exit();
+    }
+
+    
+    $mysqli = new mysqli("localhost", "root", "", "library_system");
+    $query = "INSERT INTO member (member_id, first_name, last_name, birthday, email) VALUES ('$member_id', '$first_name', '$last_name', '$birthday', '$email')";
+    $result = $mysqli->query($query);
+
+    // Display success message
+    echo "Member registered successfully!";
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
