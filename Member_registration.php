@@ -2,7 +2,7 @@
 <?php
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate and sanitize input data
+    
     $member_id = $_POST['member_id'];
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    // Validate Member ID format using regex
+    // Validate Member ID 
     if (!preg_match('/^M\d{3}$/', $member_id)) {
         echo "Invalid Member ID format. Please use format M001";
         exit();
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         margin-left: auto;
         margin-right: auto;
         margin-right: 0;
-        color: white; /* Set the color here */
+        color: white; 
     }
 
     .navbar-nav {
