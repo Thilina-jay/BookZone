@@ -1,5 +1,9 @@
 
 <?php
+
+ //R.M.C. Geevinda
+ //CT/2019/023
+
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
@@ -101,6 +105,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Register">
     </form>
 
-		
+	
 </body>
 </html>
