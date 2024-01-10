@@ -18,7 +18,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-right: 0;
-        color: white; /* Set the color here */
+        color: white;
     }
 
     .navbar-nav {
@@ -58,7 +58,7 @@
 		    </ul>
 		</div>
 	</nav><br>
-
+    
     <h2>Delete Member</h2><br>
     <form method="post" action="">
         Member ID: <input type="text" name="member_id"><br><br><br>
@@ -73,6 +73,7 @@
 </html>
 
 <?php
+// Establish DB(library_system) connection
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -81,7 +82,7 @@ $dbname = "library_system";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['member_id'])) {
         $conn = new mysqli($servername, $username, $password, $dbname);
-
+        // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
