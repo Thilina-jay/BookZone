@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Establish library_system connection
+    // Establish DB(library_system) connection
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -20,9 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $birthday = $_POST['birthday'];
     $email = $_POST['email'];
 
-    // Perform validations if needed
+    
 
-    // Update user details in the library_system
+    // Update user details in the DB
     $sql = "UPDATE member SET first_name='$first_name', last_name='$last_name', birthday='$birthday', email='$email' WHERE member_id='$member_id'";
 
     if ($conn->query($sql) === TRUE) {
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         margin-left: auto;
         margin-right: auto;
         margin-right: 0;
-        color: white; /* Set the color here */
+        color: white; 
     }
 
     .navbar-nav {
