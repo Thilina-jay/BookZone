@@ -18,7 +18,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-right: 0;
-        color: white; /* Set the color here */
+        color: white;
     }
 
     .navbar-nav {
@@ -69,7 +69,7 @@
 
     <?php
     if (isset($_GET['member_id'])) {
-        // Establish library_system connection
+        // Establish DB(library_system) connection
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -84,7 +84,7 @@
 
         $member_id = $_GET['member_id'];
 
-        // Fetch member records from the library_system for the specified Member ID
+        // Fetch member records from the DB for the specified Member ID
         $sql = "SELECT member_id, first_name, last_name, birthday, email FROM member WHERE member_id='$member_id'";
         $result = $conn->query($sql);
 
