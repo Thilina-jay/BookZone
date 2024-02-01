@@ -105,10 +105,13 @@ function get_user_issue_book_count() {
 		</div>
 	</nav><br>
 
-    <center><p> Add cards here </p></center>
-<!-- Use cards to add your features -->
+    <button onclick="document.location='book_register.php'">Book Reg</button>
+    <button onclick="document.location='add_cat.php'">Cat Reg</button>
+    <button onclick="document.location='member_registration.php'">Mem Reg</button>
+    <button onclick="document.location='book_borrow.php'">Book Borrow</button>
+    <button onclick="document.location='assign_fine.php'">Fine</button>
 
-
+ 
 
 
 <footer>
