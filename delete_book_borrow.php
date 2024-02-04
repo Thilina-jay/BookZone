@@ -36,7 +36,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="signup.php">
+        <a class="navbar-brand" href="user_dashboard.php">
             <img src="book.png" alt="BookByte Logo">
         </a>
         <ul class="nav navbar-nav navbar-right">
@@ -48,6 +48,8 @@
                     <a class="dropdown-item" href="update_book_borrow.php">Update Borrowed Book</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="delete_book_borrow.php">Delete Borrowed Book</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="view_all_borrow.php">View all</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>

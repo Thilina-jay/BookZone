@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,39 +35,31 @@
     <a class="navbar-brand" href="user_dashboard.php">
         <img src="book.png" alt="BookByte Logo">
     </a>
-    
-			 
-			
-<ul class="nav navbar-nav navbar-right">
-		      <li class="nav-item dropdown">
-	        	<a class="nav-link dropdown-toggle" data-toggle="dropdown">Member Details Delete</a>
-	        	<div class="dropdown-menu">
-	        		<a class="dropdown-item" href="member_registration.php">Member Details Registration</a>
-	        		<div class="dropdown-divider"></div>
-	        		<a class="dropdown-item" href="member_update.php">Member Details Update</a>
-	        		<div class="dropdown-divider"></div>
-	        		<a class="dropdown-item" href="member_display.php">Member Details Display</a>
-                    <div class="dropdown-divider"></div>
-	        		<a class="dropdown-item" href="member_all_display.php">All Member Details</a>
-	        	</div>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="logout.php">Logout</a>
-		      </li>
-		    </ul>
-		</div>
-	</nav><br>
-    
-    <h2>Delete Member</h2><br>
-    <form method="post" action="">
-        Member ID: <input type="text" name="member_id"><br><br><br>
-        <input type="submit" value="Delete">
-    </form>
+	<ul class="nav navbar-nav navbar-right">
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown">Member Details Delete</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="member_registration.php">Member Details Registration</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="member_update.php">Member Details Update</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="member_display.php">Member Details Display</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="member_all_display.php">All Member Details</a>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="logout.php">Logout</a>
+		</li>
+	</ul>
+</nav><br>
 
+<h2>Delete Member</h2><br>
+<form method="post" action="">
+    Member ID: <input type="text" name="member_id"><br><br><br>
+    <input type="submit" value="Delete">
+</form>
 
-
-
-		
 </body>
 </html>
 
@@ -92,17 +83,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($conn->query($sql) === TRUE) {
             if ($conn->affected_rows > 0) {
-                echo "Member deleted successfully!";
+                // Replace echo with JavaScript alert
+                echo "<script>alert('Member deleted successfully!');</script>";
             } else {
-                echo "No matching member found to delete.";
+                // Replace echo with JavaScript alert
+                echo "<script>alert('No matching member found to delete.');</script>";
             }
         } else {
-            echo "Error deleting member: " . $conn->error;
+            // Replace echo with JavaScript alert
+            echo "<script>alert('Error deleting member: " . $conn->error . "');</script>";
         }
 
         $conn->close();
     } else {
-        echo "Member ID is not set!";
+        // Replace echo with JavaScript alert
+        echo "<script>alert('Member ID is not set!');</script>";
     }
 }
 ?>

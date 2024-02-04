@@ -3,7 +3,7 @@ session_start();
 
 
 $connection = mysqli_connect("localhost", "root", "");
-$db = mysqli_select_db($connection, "demo");
+$db = mysqli_select_db($connection, "library_system");
 
 $name = "";
 $email = "";
@@ -66,21 +66,23 @@ if (isset($_SESSION['email'])) {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="signup.php">
+                <a class="navbar-brand" href="user_dashboard.php">
                     <img src="book.png" alt="BookByte Logo">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">My Profile </a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Category </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="view_profile.php">View Profile</a>
+                        <a class="dropdown-item" href="add_cat.php">Add Category</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="edit_profile.php">Edit Profile</a>
+                        <a class="dropdown-item" href="edit_cat.php">Edit Category</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="change_password.php">Change Password</a>
+                        <a class="dropdown-item" href="manage_cat.php">Manage category</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="alldata.php">All data</a>
+                      
+                        <a class="dropdown-item" href="Regcat.php">All Category</a>
+                        
                     </div>
                 </li>
                 <li class="nav-item">
