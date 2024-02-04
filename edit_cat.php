@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$connection = mysqli_connect("localhost", "root", "", "demo");
+$connection = mysqli_connect("localhost", "root", "", "library_system");
 
 $name = "";
 $email = "";
@@ -36,69 +36,67 @@ function get_category_name_from_database() {
     return ''; 
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Edit Book Category</title>
+    <title>Add New Category</title>
     <meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap-4.4.1/css/bootstrap.min.css">
-    <script type="text/javascript" src="bootstrap-4.4.1/js/jquery_latest.js"></script>
+    <script type="text/javascript" src="bootstrap-4.4.1/js/juqery_latest.js"></script>
     <script type="text/javascript" src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         function alertMsg() {
-            alert("Category updated successfully...");
+            alert("Category added successfully...");
             window.location.href = "add_cat.php";
         }
     </script>
-    <style type="text/css">
-        .navbar-brand img {
-            width: auto;
-            height: 30px;
-        }
-
-        #main_content {
-            padding: 50px;
-            background-color: whitesmoke;
-        }
-
-        #side_bar {
-            background-color: whitesmoke;
-            padding: 50px;
-            width: 200px;
-            height: 750px;
-        }
-
-        #sidebar-image {
-            max-width: 80%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-    </style>
+    <style type ="text/css">
+    .navbar-brand img {
+        width: auto; 
+        height: 30px; 
+    }
+    #main_content{
+		padding: 50px;
+		background-color: whitesmoke;
+	}
+	#side_bar{
+		background-color: whitesmoke;
+		padding: 50px;
+		width: 200px;
+		height: 750px;
+	}
+	#sidebar-image {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+	}
+</style>
 </head>
 
 <body>
 
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="signup.php">
+                <a class="navbar-brand" href="user_dashboard.php">
                     <img src="book.png" alt="BookByte Logo">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">My Profile </a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Category </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="view_profile.php">View Profile</a>
+                        <a class="dropdown-item" href="add_cat.php">Add Category</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="edit_profile.php">Edit Profile</a>
+                        <a class="dropdown-item" href="edit_cat.php">Edit Category</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="change_password.php">Change Password</a>
+                        <a class="dropdown-item" href="manage_cat.php">Manage category</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="alldata.php">All data</a>
+                        <a class="dropdown-item" href="Regcat.php">All Category</a>
+                        
                     </div>
                 </li>
                 <li class="nav-item">

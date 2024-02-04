@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borrow a Book</title>
+    <title>Update Borrowed Book</title>
     <link rel="stylesheet" type="text/css" href="bootstrap-4.4.1/css/bootstrap.min.css">
-    <script type="text/javascript" src="bootstrap-4.4.1/js/jquery_latest.js"></script>
-    <script type="text/javascript" src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
-    <style type="text/css">
+  	<script type="text/javascript" src="bootstrap-4.4.1/js/juqery_latest.js"></script>
+  	<script type="text/javascript" src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
+      <style type="text/css">
         .navbar-brand img {
             width: auto; 
             height: 30px; 
@@ -46,32 +46,24 @@
             background-color: #f2f2f2;
         }
     </style>
-    <script>
-        function goToSearchPage() {
-            var destinPage = "book_borrow_display.php";
-            window.location.href = destinPage;
-        }
-
-        function goToViewAll() {
-            var destinPage = "view_all_borrow.php";
-            window.location.href = destinPage;
-        }
-    </script>
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="signup.php">
+        <a class="navbar-brand" href="user_dashboard.php">
             <img src="book.png" alt="BookByte Logo">
         </a>
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Borrow Book</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Update Borrowed Book</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="book_borrow.php">Borrow a Book</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="update_book_borrow.php">Update Borrowed Book</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="delete_book_borrow.php">Delete Borrowed Book</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="view_all_borrow.php">View all</a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>

@@ -149,7 +149,7 @@ if (isset($_POST['add_fine'])) {
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container-fluid">
 			<div class="navbar-header">
-            <a class="navbar-brand" href="signup.php">
+            <a class="navbar-brand" href="user_dashboard.php">
                 <img src="book.png" alt="BookByte Logo">
             </a>
 			</div>
