@@ -142,11 +142,14 @@ if (isset($_POST['add_fine'])) {
         .box button:hover {
             background-color: #0056b3;
         }
+        .navbar-custom {
+            background-color: #000000; 
+        }
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
 <div class="container-fluid">
 			<div class="navbar-header">
             <a class="navbar-brand" href="user_dashboard.php">

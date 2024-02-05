@@ -1,6 +1,6 @@
 <?php
 $connection = mysqli_connect("localhost", "root", "");
-$db = mysqli_select_db($connection, "demo");
+$db = mysqli_select_db($connection, "library_system");
 
 // Make sure to sanitize input to prevent SQL injection
 $categoryId = mysqli_real_escape_string($connection, $_GET['cid']);
