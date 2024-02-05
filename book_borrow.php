@@ -71,6 +71,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .navbar-nav .nav-item {
             margin-right: 10px;
         }
+        .navbar-custom {
+            background-color: #000000; 
+        }
     </style>
     <script>
         function goToSearchPage() {
@@ -85,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <a class="navbar-brand" href="user_dashboard.php">
             <img src="book.png" alt="BookByte Logo">
         </a>

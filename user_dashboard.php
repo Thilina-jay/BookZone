@@ -146,11 +146,23 @@ function get_user_issue_book_count() {
             bottom: 0;
             margin-top: auto;
         }
+        footer {
+            background-color: #000000; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .navbar-custom {
+            background-color: #000000; 
+        }
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="signup.php">

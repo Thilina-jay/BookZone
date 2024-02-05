@@ -66,11 +66,14 @@ if (isset($_POST['add_book'])) {
     .navbar-nav .nav-item {
         margin-right: 10px;
     }
-</style>
-
+    .navbar-custom {
+            background-color: #000000; 
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <a class="navbar-brand" href="user_dashboard.php">
         <img src="book.png" alt="BookByte Logo">
     </a>
