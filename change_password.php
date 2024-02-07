@@ -130,14 +130,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .form-group {
             margin-bottom: 15px;
         }
-        .navbar-custom {
-            background-color: #000000; 
-        }
     </style>
 </head>
-<body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="user_dashboard.php">
             <img src="book.png" alt="Logo">
         </a>
