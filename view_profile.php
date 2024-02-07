@@ -64,14 +64,11 @@ mysqli_close($connection);
     .navbar-nav .nav-item {
         margin-right: 10px;
     }
-	.navbar-custom {
-            background-color: #000000; 
-        }
-    </style>
+</style>
+ </style>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="user_dashboard.php">
         <img src="book.png" alt=" Logo">
     </a>
