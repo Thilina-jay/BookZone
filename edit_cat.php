@@ -47,7 +47,7 @@ function get_category_name_from_database() {
     <script type="text/javascript" src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         function alertMsg() {
-            alert("Category updated successfully...");
+           alert("Category added successfully...");
             window.location.href = "add_cat.php";
         }
     </script>
