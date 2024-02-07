@@ -72,14 +72,13 @@ function get_category_name_from_database() {
     display: block;
     margin: 20px auto; 
 	}
-    .navbar-custom {
-            background-color: #000000; 
-        }
-    </style>
+</style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="user_dashboard.php">
